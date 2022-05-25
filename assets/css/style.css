@@ -145,6 +145,7 @@ section p:first-child{
     color: #676665;
     background-color: #C4C4C4;
     margin: 0 auto;
+    text-align: center;
 }
 #info h2{
     font-size: 2em;
@@ -152,16 +153,16 @@ section p:first-child{
 
 /* contact */
 #contact{
-    
-    text-align: center;
     margin: 0 auto;
     box-sizing: border-box;
 }
 #contact input{
-    /* width: 100%; */
+    width: 100%;
     padding: 1em;
-    margin: 0.5em 1em;
     box-sizing: border-box;
+}
+#contact div{
+    margin: 0.5em 1em;
 }
 
 /* About */
