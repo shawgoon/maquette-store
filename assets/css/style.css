@@ -28,6 +28,20 @@
     justify-content: space-between;
     padding: 0.2em;
     font-size: 2em;
+    /* flex-direction: column; */
+}
+#navMenu{
+    display:none;
+    /* display:flex; */
+    /* flex-direction: column; */
+    
+}
+#navMenu a{
+    color:#B3B3B3;
+    text-decoration: none;
+}
+.burger a{
+    color:white;
 }
 .bag{
     color: #656565;
@@ -97,9 +111,6 @@ section p:first-child{
     flex-direction: column;
     width: 48%;
     height: 40vh;
-    /* padding: 0.5em; */
-    /* border: red solid 1px; */
-    /* margin: 0.5em 0; */
 }
 .cards p{
     font-size: 1.3em;
@@ -164,11 +175,15 @@ section p:first-child{
 #contact div{
     margin: 0.5em 1em;
 }
+#contact form{
+    margin-bottom: 2em;
+}
 
 /* About */
 #link{
     display: flex;
     justify-content: space-around;
+    padding-bottom: 5em;
 }
 #about{
     display: flex;
@@ -176,18 +191,23 @@ section p:first-child{
 }
 #about a{
     color: black;
-    margin: 0.8em 0;
+    margin: 0.5em 0;
 }
-#store p{
-    margin: 0.8em 0;
+#store div{
+    margin: 0.5em 0;
+}
+#store i{
+    margin-top: 0.8em;
+}
+#store a{
+    color: #656565;   
+}
+.social{
+    margin: 1.5em 0;
 }
 #about,
 #store{
     text-align: center; 
-}
-#about h2,
-#store h2{
-    margin-top: 1.5em;
 }
 
 /* footer */
@@ -200,4 +220,13 @@ footer{
     padding: 1.5em;
 }
 
+/* responsive */
 
+@media  screen and (min-width: 576px) {
+    #navMenu{
+        display: flex;
+    }
+    .burger{
+        display: none;
+    }
+}
